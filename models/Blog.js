@@ -16,7 +16,7 @@ Blog.init(
             allowNull: false,
         },
         contents: {
-            type: DataTypes.INTEGER,
+            type: DataTypes.STRING,
             allowNull: false,
         },
 

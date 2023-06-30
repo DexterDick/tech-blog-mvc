@@ -1,0 +1,12 @@
+[
+    {
+        "comment": "While there are many resources to help programmers write better code—such as books and static analyzers—there are few for writing better comments",
+        "user_id": 1,
+        "blog_id": 1
+    },
+    {
+        "comment": "I love this book could not stop reading",
+        "user_id": 2,
+        "blog_id": 2
+    }
+]
