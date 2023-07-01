@@ -20,11 +20,29 @@ router.get("/", async (req, res) => {
 
         const blogs = blogData.map((blog) => blog.get({ plain: true }));
 
-        res.status(200).json(blogs);
+        res.render("home", { blogs });
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
     }
+});
+
+router.get("/login", async (req, res) => {
+    // if (req.session.logged_in) {
+    //     res.redirect("/dashboard");
+    //     return;
+    // }
+
+    res.render("login");
+});
+
+router.get("/signup", async (req, res) => {
+    // if (req.session.logged_in) {
+    //     res.redirect("/dashboard");
+    //     return;
+    // }
+
+    res.render("signup");
 });
 
 router.get("/:id", async (req, res) => {
@@ -50,6 +68,10 @@ router.get("/:id", async (req, res) => {
         console.log(err);
         res.status(500).json(err);
     }
+});
+
+router.get("/dashboard", async (req, res) => {
+    res.render("dashboard");
 });
 
 module.exports = router;
