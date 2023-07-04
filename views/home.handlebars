@@ -1,4 +1,12 @@
 {{#each blogs as |blog|}}
-    <p>Title {{blog.title}}</p>
+    <article>
+        <div>
+            <h3><a href="/{{blog.id}}">{{blog.title}}</a></h3><p>Posted by
+                {{blog.user.username}}
+                on
+                {{blog.date_created}}</p>
+
+        </div>
+    </article>
 
 {{/each}}

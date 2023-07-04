@@ -2,9 +2,29 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="/css/style.css" />
         <title>Document</title>
     </head>
     <body>
+        <header>
+            <nav>
+                <a href="/">Home</a>
+                <a href="/dashboard">Dashboard</a>
+                {{#if logged_in}}
+                    <button id="btn-logout">Logout</button>
+                {{else}}
+                    <a href="/login">Login</a>
+                {{/if}}
+
+            </nav>
+            <h1>The Tech Blog</h1>
+
+        </header>
         {{{body}}}
+
+        {{#if logged_in}}
+            <script src="./js/logout.js"></script>
+        {{/if}}
     </body>
+
 </html>
