@@ -33,3 +33,8 @@ nav {
     display: flex;
     gap: 1.5rem;
 }
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}

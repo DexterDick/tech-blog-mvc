@@ -1,0 +1,17 @@
+<div>
+    <div>
+        <h3>Edit Post</h3>
+    </div>
+    <form class="editblog-form" data-blogId={{blog.id}}>
+        <label for="title">Title</label>
+        <input type="text" name="title" id="title" value="{{blog.title}}" />
+        <label for="contents">Content</label>
+        <textarea name="contents" id="contents">{{blog.contents}}</textarea>
+        <button type="submit">update Post</button>
+        <button class="btn-delete" data-deleteId={{blog.id}}>Delete</button>
+
+    </form>
+
+</div>
+
+<script src="/js/editblog.js"></script>

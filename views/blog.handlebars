@@ -4,7 +4,7 @@
         <p>Posted by
             {{user.username}}
             on
-            {{date_created}}</p>
+            {{format_date date_created}}</p>
     </div>
     <div>
         <p>{{contents}}</p>
@@ -24,6 +24,15 @@
                 ></textarea>
                 <input type="submit" />
             </form>
+        {{/if}}
+
+        {{#if comments.length}}
+            {{#each comments as |comment|}}
+                <p>{{comment.comment}}</p>
+                <p>{{comment.user.username}}</p>
+
+            {{/each}}
+
         {{/if}}
     </div>
 </div>

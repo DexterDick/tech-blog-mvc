@@ -1,4 +1,12 @@
 <h3>dashboard</h3>
-<p>
-    {{user.username}}
-</p>
+
+{{#each blogs}}
+    <a href="/blog/edit/{{id}}" class="flex">
+
+        <p>{{title}}</p>
+        <p>{{format_date date_created}}</p>
+
+    </a>
+{{/each}}
+
+<a href="/newblog">+Add new Blog</a>
