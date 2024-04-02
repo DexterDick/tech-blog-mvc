@@ -40,8 +40,25 @@ body {
 
 .logo-box {
     display: inline-block;
-    background-color: aquamarine;
+    background-color: rgb(196, 218, 211);
     margin-bottom: 2rem;
     margin-left: 1.5rem;
     padding: 0.5rem 1rem;
+}
+
+.card {
+    width: 95%;
+    margin: 2rem auto;
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--color-black);
+    color: white;
+    padding: 1rem;
+}
+
+footer {
+    text-align: center;
 }
